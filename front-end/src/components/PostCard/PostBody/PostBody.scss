@@ -1,0 +1,21 @@
+.postbody {
+  &-content {
+    padding: 0 25px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+    span {
+      font-size: 14px;
+    }
+
+    .readMore {
+      color: gray;
+      cursor: pointer;
+    }
+  }
+
+  img {
+    max-height: 644px;
+    object-fit: contain;
+  }
+}

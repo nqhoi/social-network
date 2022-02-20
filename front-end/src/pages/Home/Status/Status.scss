@@ -1,0 +1,28 @@
+.status {
+  background-color: #fff;
+  box-shadow: 0 0 5px #ddd;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+
+  &-btn {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: gray;
+    padding: 0 10px;
+    text-align: left;
+    margin: 0 5px;
+  }
+
+  &-btn:hover {
+    background-color: #ddd;
+  }
+}
+
+@media (max-width: 768px) {
+  .status {
+    padding: 20px 10px;
+  }
+}

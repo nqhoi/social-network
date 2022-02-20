@@ -1,0 +1,22 @@
+.postheader {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    cursor: pointer;
+    padding: 16px 24px;
+
+    &-name {
+        transform: translateY(3px)
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        left: inherit;
+        right: 0;
+    }
+
+    .dropdown-item {
+        display: flex;
+        margin: 4px 0;
+    }
+}

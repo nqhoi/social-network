@@ -1,0 +1,29 @@
+.login {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fdfdfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    background-color: #fff;
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 50px 25px;
+
+    .pass {
+      position: relative;
+
+      small {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+  }
+}

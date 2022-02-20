@@ -1,0 +1,27 @@
+.chat_text {
+  padding: 8px 12px;
+  margin-bottom: 4px;
+}
+
+.chat_time {
+  font-size: 10px;
+  color: #777;
+}
+
+.you_content {
+  position: relative;
+
+  .fa-trash {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 12px;
+    opacity: 0;
+  }
+}
+
+.you_content:hover .fa-trash {
+  opacity: 1;
+}

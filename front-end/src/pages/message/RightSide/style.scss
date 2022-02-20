@@ -1,0 +1,123 @@
+.chat_container {
+  width: 100%;
+  height: calc(100% - 110px);
+  overflow-y: auto;
+  padding: 0 8px;
+
+  .chat_display {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .chat_row{ 
+    display: grid;
+    grid-template-columns: 70%;
+    margin-bottom: 8px;
+  }
+
+  .other_message {
+    justify-content: start;
+    justify-items: start;
+
+    .chat_text {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #efefef;
+      border-radius: 20px;
+    }
+  }
+
+  .you_message {
+    justify-content: end;
+    justify-items: end;
+
+    .chat_text {
+      background-color: #efefef;
+      color: #000;
+      border: 1px solid #efefef;
+      border-radius: 20px;
+    }
+  }
+}
+
+.show_media {
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  place-items: center;
+  grid-gap: 10px;
+  background-color: #f3f3f3;
+  padding: 0 4px;
+
+  #file_media {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 70px;
+    min-height: 70px;
+
+    img,
+    video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+
+    span {
+      position: absolute;
+      top: 0;right: 0;
+      z-index: 4;
+      background-color: #fff;
+      border: 1px solid crimson;
+      padding: 4px 8px;
+      font-size: 8px;
+      border-radius: 50%;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+
+.chat_input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+
+  .dropdown-menu {
+    transform: translate3d(-190px, -155px, 0px) !important;
+  }
+
+  .file_upload {
+    position: relative;
+    // overflow: hidden;
+    margin: 0 8px;
+
+    #file {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+  }
+}

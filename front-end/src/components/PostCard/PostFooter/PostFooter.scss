@@ -1,0 +1,19 @@
+.postfooter {
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    cursor: pointer;
+
+    i {
+      font-size: 28px;
+      margin: 8px;
+    }
+
+    img {
+      width: 28px;
+      height: 28px;
+      transform: translate(4px, -6px);
+    }
+  }
+}

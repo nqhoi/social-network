@@ -1,0 +1,29 @@
+.inputcommnet {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  padding: 0 12px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+
+  .dropdown-menu {
+    transform: translate3d(-120px, -200px, 0px) !important;
+  }
+
+  input {
+    background-color: #f7f7f7;
+    border: none;
+    outline: none;
+    flex: 1;
+    overflow: auto;
+    padding: 12px 0;
+  }
+
+  &-btnPost {
+    border: none;
+    outline: none;
+    background-color: #f7f7f7;
+    color: blue;
+    font-weight: 600;
+  }
+}

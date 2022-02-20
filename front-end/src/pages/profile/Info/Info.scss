@@ -1,0 +1,48 @@
+.info {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px 10px;
+
+  &-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .follow-btn {
+      color: teal;
+      cursor: pointer;
+
+      span:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-content {
+    min-width: 250px;
+    max-width: 550px;
+    width: 100%;
+    flex: 1;
+    opacity: 0.7;
+    margin: 0 16px;
+
+    &-title {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        transform: translateY(4px);
+        flex: 3;
+        color: #000;
+      }
+
+      button {
+        flex: 2;
+      }
+    }
+  }
+}

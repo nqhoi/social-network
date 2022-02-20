@@ -1,0 +1,27 @@
+.commentcard {
+  &-content {
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .readMore {
+      cursor: pointer;
+      color: crimson;
+    }
+
+
+    textarea {
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &-content:hover .nav-item {
+    opacity: 1;
+  }
+}
